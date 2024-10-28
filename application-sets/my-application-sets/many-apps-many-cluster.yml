@@ -13,18 +13,18 @@ spec:
               revision: HEAD
               directories:
                 - path: application-sets/example-apps/*
-          - clusters: {}
-  template:
-    metadata:
-    name: 'default-{{name}}'
-    spec:
-    project: default
-    source:
-      repoURL: https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
-      targetRevision: HEAD
-      path: '{{path}}'
-    destination:
-      server: '{{server}}'
+                - clusters: {}
+      template:
+        metadata:
+        name: 'default-{{name}}'
+        spec:
+      project: default
+      source:
+        repoURL: https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
+        targetRevision: HEAD
+        path: '{{path}}'
+      destination:
+        server: '{{server}}'
         
  # Sync policy
       syncPolicy:
