@@ -31,7 +31,7 @@ spec:
           #        project: default  
   template:
     metadata:
-      name: {{path.basename}}
+      name: '{{path.basename}}-{{name}}'
     spec:
       project: default
       source:
