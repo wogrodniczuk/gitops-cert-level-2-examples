@@ -3,8 +3,6 @@ kind: ApplicationSet
 metadata:
   name: my-application-sets
 spec:
-  goTemplate: true
-  goTemplateOptions: ["missingkey=error"]
   generators:
     # matrix 'parent' generator
     - matrix:
