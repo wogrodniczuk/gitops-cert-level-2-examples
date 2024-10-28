@@ -13,7 +13,20 @@ spec:
               revision: HEAD
               directories:
                 - path: application-sets/example-apps/*
-          - clusters: {}
+          - list:
+              elements:
+              - cluster: in-cluster
+                url: https://kubernetes.default.svc
+                values:
+                  project: default
+              - cluster: cluster-2
+                url: https://10.5.0.196:6443
+                values:
+                  project: default
+              - cluster: cluster-3
+                url: https://10.5.0.201:6443
+                values:
+                  project: default
     
   template:
     metadata:
