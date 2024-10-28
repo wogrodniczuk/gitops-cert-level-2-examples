@@ -31,7 +31,7 @@ spec:
           #        project: default  
   template:
     metadata:
-      name: 'apps-{{name}}'
+      name: {{path.basename}}
     spec:
       project: default
       source:
